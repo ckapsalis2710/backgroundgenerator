@@ -1,3 +1,8 @@
+// Load the full build.
+var _ = require('lodash');
+
+var array12 = [1,2,3,4,5,6,7];
+console.log("array12without: ", _.without(array12, 3));
 var css = document.querySelector("h3");
 var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
@@ -65,13 +70,3 @@ color2.addEventListener("input", setGradient);
 setGradient();
 
 randomB.addEventListener("click", setRandomColorInputs);
-
-
-const multiply = (a,b) => a*b;
-const curriedMultiply = (a) => (b) => a*b;
-curriedMultiply(3); --> (b) => a*b;
-curriedMultiply(3)(4); --> 12
-
-const multipliedBy5 = curriedMultiply(5);
-multipliedBy5(4); --> 20
-
