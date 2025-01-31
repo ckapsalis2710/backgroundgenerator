@@ -1,8 +1,3 @@
-// Load the full build.
-var _ = require('lodash');
-
-var array12 = [1,2,3,4,5,6,7];
-console.log("array12without: ", _.without(array12, 3));
 var css = document.querySelector("h3");
 var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
@@ -60,6 +55,7 @@ function setRandomColors() {
 function setRandomColorInputs() {
 	color1.value = setRandomColors();
 	color2.value = setRandomColors();
+    setGradient();
 }
 
 color1.value = colourNameToHex('red');
